@@ -147,6 +147,3 @@ workflow hub. These flow straight into [RELATIONSHIP.md](RELATIONSHIP.md) and [P
 > **Before dropping/archiving anything**, run the redundancy merges in §4 and confirm with the
 > app team that the §2b "abandoned process" modules (print, twisting, washing, AOP, collar)
 > are truly retired — these are business decisions, not purely technical ones.
-
-**Net effect:** the new PostgreSQL schema starts at **~370 meaningful tables** instead of 559,
-with duplicates merged and dead modules archived — a ~33 % reduction before a single FK is added.

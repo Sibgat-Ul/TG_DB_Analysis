@@ -60,18 +60,18 @@ The domains are not arbitrary buckets — they are **stages of one manufacturing
 Reading left-to-right is the path of a single buyer order through the factory:
 
 ```
-                 ┌──────────────────── 02 Reference / lib* (buyers, suppliers, yarn, dia, chemicals) ───────────────────┐
-                 │                          cross-cutting master data, referenced everywhere                              │
-                 └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
-                 ┌──────────── 01 System / Auth (projectID = factory unit, users, permissions, activity_log) ───────────┐
-                 └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+            ┌──────────────────── 02 Reference / lib* (buyers, suppliers, yarn, dia, chemicals) ──────────────────┐
+            │                          cross-cutting master data, referenced everywhere                           │
+            └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+            ┌──────────── 01 System / Auth (projectID = factory unit, users, permissions, activity_log) ──────────┐
+            └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
-  04 Sampling/Inquiry ──▶ 05 Bulk Order/Costing ──▶ 06 Work Order ──┬─▶ 07 Knitting ──▶ 08 Dyeing/Finishing ──┐
-   (inq_, sample_, dev_)    (bulk_, cost sheet)      (workorder_)    │                                          ▼
-        jobID                  order_id                 woNo/wo_id   └────────────────────────────────▶ 09 Production
+  04 Sampling/Inquiry ──▶ 05 Bulk Order/Costing ──▶ 06 Work Order ─┬─▶ 07 Knitting ──▶ 08 Dyeing/Finishing ──┐
+   (inq_, sample_, dev_)    (bulk_, cost sheet)      (workorder_)    │                                           ▼
+        jobID                  order_id                 woNo/wo_id   └─────────────────────────────────▶ 09 Production
                                                                                                         (cut/sew/finish)
                                                                                                               │
-   10 Inventory & Store  ◀───────── feeds / consumes materials at every stage ──────────────────────────────┘
+   10 Inventory & Store  ◀───────── feeds / consumes materials at every stage ───────────────────────────────┘
         (receive / issue / stock)                                                                             │
                                                                                                               ▼
                                                                             11 Commercial/Invoice/LC ──▶ 12 Packing/Shipment

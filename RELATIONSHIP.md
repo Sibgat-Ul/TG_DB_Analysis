@@ -5,8 +5,8 @@
 > [GROUPING.md](GROUPING.md) and the keep/drop tiers in [ANALYSIS.md](ANALYSIS.md).
 > Detection is reproducible via [`fk_detect.py`](fk_detect.py) → `relationships.json`.
 
-The database declares **0 foreign keys** today. But the relationships *exist* — they're just
-enforced (badly) in application code. We recover them from the data.
+The database declares **0 foreign keys** today. The relationships *exist* — they're just not
+enforced the way they were supposed to be. We recover them from the data.
 
 ---
 
