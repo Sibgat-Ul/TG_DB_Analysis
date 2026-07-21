@@ -43,7 +43,7 @@
 - Full access + support for the development servers.
 
 ## Notes:
-Two versions will be maintain till ready for **Production**.
+Two versions will be maintained till ready for **Production**.
 - **Alpha**: Exclusive to only dev-team.
   - Smaller teams for domain-specific knowledge must be incorporated and have sessions with the dev.
   - the deployments will be solely for testing purpose to dev and this small team of domain-specific knowledge.
