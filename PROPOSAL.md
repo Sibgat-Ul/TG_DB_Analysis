@@ -21,19 +21,19 @@
 ## Proposed tech stack:
 
 1. Database: PostgreSQL
-  - Multiple read write.
-  - Diverse plugins.
-  - ACID compliant.
+    - Multiple read write.
+    - Diverse plugins.
+    - ACID compliant.
 
 2. Backend: Python
-  - FastAPI for fast routes.
-  - SQLalchemy + Alembic, a robust ORM for python + db migration management.
-  - FastAPI security for native auth system.
+    - FastAPI for fast routes.
+    - SQLalchemy + Alembic, a robust ORM for python + db migration management.
+    - FastAPI security for native auth system.
 
 3. Frontend: Vue + Nuxt
-  - Dynamic renderings.
-  - fast and smaller bundle size than react.
-  - robust state management.
+    - Dynamic renderings.
+    - fast and smaller bundle size than react.
+    - robust state management.
 
 ## Required tools:
 
