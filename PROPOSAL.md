@@ -45,8 +45,8 @@
 ## Notes:
 Two versions will be maintained till ready for **Production**.
 - **Alpha**: Exclusive to only dev-team.
-  - Smaller teams for domain-specific knowledge must be incorporated and have sessions with the dev.
-  - the deployments will be solely for testing purpose to dev and this small team of domain-specific knowledge.
+  - Smaller teams for domain-specific knowledge outside of the dev-team. The team must be incorporated and have sessions for the development process if needed.
+  - the deployments will be solely for testing purpose to devs and the incorporated team of domain-specific knowledge.
 - **Beta**: More inclusive than Alpha.
-  - Will be deployed to a larger pool of people if not everyone.
-  - Anyone can check this version and provide feedback. 
+  - Will be deployed to a larger pool of users if not everyone.
+  - Anyone can use this version and provide feedbacks. 
